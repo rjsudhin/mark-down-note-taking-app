@@ -169,6 +169,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   color: var(--white-text);
+  gap: 0.5rem;
 }
 
 .head-components .note-title {
