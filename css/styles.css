@@ -4,6 +4,17 @@
   box-sizing: border-box;
 }
 
+:root {
+  --main-app-background: #282a36;
+  --card-background: #1e1f29;
+  --accent-purple: #bd93f9;
+  --pink-btn: #ff79c6;
+  --white-text: #f8f8f2;
+  --gray-text: #6272a4;
+  --hightlight-yellow: #f1fa8c;
+  --red-icon: #ff5555;
+}
+
 
 body {
   width: 100%;
