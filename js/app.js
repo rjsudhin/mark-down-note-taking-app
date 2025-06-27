@@ -71,6 +71,7 @@ function gettingNotes() {
 
       let deletbtn = document.createElement('span')
       deletbtn.classList.add('material-symbols-outlined')
+      deletbtn.addEventListener('mousedown', removeNoteCards)
       deletbtn.textContent = 'delete'
 
       otherComponents.append(cardContent, deletbtn)
@@ -78,5 +79,20 @@ function gettingNotes() {
       noteCard.append(headComponents, otherComponents)
       addedNoteSectionContainer.appendChild(noteCard)
     }
+  }
+}
+
+
+
+function removeNoteCards(e) {
+  let container = e.target.parentElement
+  let card = container.parentElement
+  let headComponents = card.firstElementChild
+  let noteElement = headComponents.children
+  let noteContent = noteElement[1]
+  
+  if (addedNoteSectionContainer.contains(card)) {
+    localStorage.removeItem(noteContent.textContent)
+    addedNoteSectionContainer.removeChild(card)
   }
 }

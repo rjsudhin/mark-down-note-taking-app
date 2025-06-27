@@ -185,4 +185,8 @@ body {
   text-transform: capitalize;
 }
 
+.other-components span:hover {
+  cursor: pointer;
+}
+
 /* Note - section */
