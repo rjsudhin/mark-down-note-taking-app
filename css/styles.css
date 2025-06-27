@@ -121,6 +121,9 @@ body {
   color: var(--white-text);
   font-size: 0.9rem;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* note - taking - section */
