@@ -129,3 +129,10 @@ body {
   margin: 1rem 0;
 }
 /* note heading */
+
+
+/* Note - section */
+#added-note-section-container {
+  width: 100%;
+}
+/* Note - section */
