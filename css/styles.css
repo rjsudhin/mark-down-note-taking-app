@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+/* font family Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 :root {
   --main-app-background: #282a36;
   --card-background: #1e1f29;
@@ -15,6 +18,11 @@
   --red-icon: #ff5555;
 }
 
+html {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
 
 body {
   width: 100%;
