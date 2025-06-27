@@ -45,6 +45,10 @@ body {
   font-size: 2rem;
   margin-bottom: 0.5rem;
 }
+
+#title-heading span {
+  font-size: 1.7rem;
+}
 /* header section */
 
 
