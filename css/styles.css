@@ -133,6 +133,7 @@ body {
 
 /* Note - section */
 #added-note-section-container {
+  margin-top: 1rem;
   width: 100%;
 }
 /* Note - section */
