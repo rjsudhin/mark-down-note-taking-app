@@ -18,4 +18,19 @@
 
 body {
   width: 100%;
+  background-color: var(--main-app-background);
+  display: flex;
+  justify-content: center;
+}
+
+#container {
+  border: 1px solid #fff;
+  margin: 2rem;
+  max-width: 680px;
+  width: 80%
+}
+
+#title-heading {
+  color: var(--accent-purple);
+  text-align: center;
 }
