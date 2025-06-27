@@ -14,6 +14,7 @@
   --pink-btn: #ff79c6;
   --white-text: #f8f8f2;
   --gray-text: #6272a4;
+  --border-curve: 0.4rem;
   --hightlight-yellow: #f1fa8c;
   --red-icon: #ff5555;
 }
@@ -32,15 +33,92 @@ body {
 }
 
 #container {
-  border: 1px solid #fff;
   margin: 2rem;
   max-width: 680px;
   width: 80%
 }
 
+/* header section */
 #title-heading {
   color: var(--accent-purple);
   text-align: center;
   font-size: 2rem;
-  
+  margin-bottom: 0.5rem;
 }
+/* header section */
+
+
+/* note - taking - section */
+.note-taking-section {
+  border: 2px solid var(--accent-purple);
+  border-radius: var(--border-curve);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 0.8rem;
+  cursor: pointer;
+}
+
+.note-taking-section .note-item:nth-child(1) {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0.2rem 0.8rem;
+  gap: 3rem;
+}
+
+.note-taking-section .note-item:nth-child(2) {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0.2rem 0.8rem;
+}
+
+.note-taking-section .note-item:nth-child(3) {
+  background: none;
+  border: none;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.note-item {
+  background-color: var(--card-background);
+  border: 2px solid var(--accent-purple);
+  border-radius: var(--border-curve);
+}
+
+.note-item label {
+  font-size: 1rem;
+  color: var(--accent-purple);
+}
+
+
+.note-item input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none; 
+  border-bottom: 2px solid var(--accent-purple);
+  margin-bottom: 0.2rem;
+  color: var(--white-text);
+  opacity: 0.5;
+  padding: 0.2rem 1rem;
+  font-size: 0.8rem;
+}
+
+
+.note-item .add-note-btn {
+  width: 120px;
+  height: 2rem;
+  background-color: var(--pink-btn);
+  border: none;
+  border-radius: var(--border-curve);
+  color: var(--white-text);
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+
+
+/* note - taking - section */
