@@ -143,4 +143,44 @@ body {
   margin-top: 1rem;
   width: 100%;
 }
+
+.added-note-section-container {
+  border: 2px solid var(--accent-purple);
+  border-radius: var(--border-curve);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.note-card {
+  border: 1px solid var(--accent-purple);
+  background-color: var(--card-background);
+  min-height: 150px;
+  width: 100%;
+  flex: 1 0 auto;
+  border-radius: var(--border-curve);
+  padding: 1.2rem;
+}
+
+.head-components {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--white-text);
+}
+
+.head-components .note-title {
+  text-transform: capitalize;
+}
+
+.other-components {
+  display: flex;
+  justify-content: space-between;
+  color: var(--gray-text);
+  align-items: center;
+  padding: 1rem;
+}
+
 /* Note - section */
