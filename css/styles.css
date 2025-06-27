@@ -41,4 +41,6 @@ body {
 #title-heading {
   color: var(--accent-purple);
   text-align: center;
+  font-size: 2rem;
+  
 }
