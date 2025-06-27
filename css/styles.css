@@ -45,6 +45,10 @@ body {
   font-size: 2rem;
   margin-bottom: 0.5rem;
 }
+
+#title-heading span {
+  font-size: 1.7rem;
+}
 /* header section */
 
 
@@ -117,6 +121,9 @@ body {
   color: var(--white-text);
   font-size: 0.9rem;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* note - taking - section */
