@@ -4,13 +4,13 @@ const addedNoteSectionContainer = document.querySelector('#added-note-section-co
 // checking the localStorage is empty or not
 if (localStorage.length > 0) {
   gettingNotes()
-  addedNoteSectionContainer.classList.add('added-note-section-container')
+} else {
+  addedNoteSectionContainer.style.display = 'none'
 }
 
 const noteTitle = document.querySelector('#title')
 const noteContent = document.querySelector('#content')
 const noteAddBtn = document.querySelector('.add-note-btn')
-
 
 
 // adding new Notes
@@ -29,19 +29,19 @@ noteAddBtn.addEventListener('click', () => {
 
   // make new notes UI
   addingNewNotes()
-  addedNoteSectionContainer.classList.add('added-note-section-container')
 })
 
 
 function addingNewNotes() {
   // getting things from localStorage
   gettingNotes()
-  
 }
 
 
 function gettingNotes() {
   addedNoteSectionContainer.innerHTML = ''
+  addedNoteSectionContainer.style.display = 'block'
+
   let checkingProps = localStorage
   for (let prop in checkingProps) {
     if (prop != 'length' && typeof checkingProps[prop] != 'function') {
@@ -90,9 +90,13 @@ function removeNoteCards(e) {
   let headComponents = card.firstElementChild
   let noteElement = headComponents.children
   let noteContent = noteElement[1]
-  
+
   if (addedNoteSectionContainer.contains(card)) {
     localStorage.removeItem(noteContent.textContent)
     addedNoteSectionContainer.removeChild(card)
+    console.log(localStorage.length)
+    if (localStorage.length === 0) {
+      addedNoteSectionContainer.style.display = 'none'
+    }
   }
 }
