@@ -139,12 +139,10 @@ body {
 
 
 /* Note - section */
+
 #added-note-section-container {
   margin-top: 1rem;
   width: 100%;
-}
-
-#added-note-section-container {
   border: 2px solid var(--accent-purple);
   border-radius: var(--border-curve);
   display: flex;

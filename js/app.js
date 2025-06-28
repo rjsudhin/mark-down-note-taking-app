@@ -40,7 +40,7 @@ function addingNewNotes() {
 
 function gettingNotes() {
   addedNoteSectionContainer.innerHTML = ''
-  addedNoteSectionContainer.style.display = 'block'
+  addedNoteSectionContainer.style.display = 'flex'
 
   let checkingProps = localStorage
   for (let prop in checkingProps) {
