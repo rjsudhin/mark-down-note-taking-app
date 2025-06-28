@@ -17,11 +17,15 @@
   --border-curve: 0.4rem;
   --hightlight-yellow: #f1fa8c;
   --red-icon: #ff5555;
+  --font-base: clamp(0.9rem, 1.5vw, 1.2rem);
+  --font-heading: clamp(1.4rem, 2.5vw, 2rem);
+  --font-subtitle: clamp(1.1rem, 2vw, 1.5rem);
+  --font-note: clamp(0.9rem, 1.3vw, 1.1rem);
 }
 
 html {
   font-family: "Inter", sans-serif;
-  font-size: 18px;
+  font-size: var(--font-base);
   line-height: 1.5;
 }
 
@@ -39,15 +43,22 @@ body {
 }
 
 /* header section */
+#header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
 #title-heading {
   color: var(--accent-purple);
   text-align: center;
-  font-size: 2rem;
+  font-size: var(--font-heading);
   margin-bottom: 0.5rem;
 }
 
 #title-heading span {
-  font-size: 1.7rem;
+  font-size: var(--font-heading);
 }
 /* header section */
 
@@ -93,7 +104,7 @@ body {
 }
 
 .note-item label {
-  font-size: 1rem;
+  font-size: var(--font-subtitle);
   color: var(--accent-purple);
 }
 
@@ -108,7 +119,7 @@ body {
   color: var(--white-text);
   opacity: 0.5;
   padding: 0.2rem 1rem;
-  font-size: 0.8rem;
+  font-size: var(--font-base);
 }
 
 
@@ -119,7 +130,7 @@ body {
   border: none;
   border-radius: var(--border-curve);
   color: var(--white-text);
-  font-size: 0.9rem;
+  font-size: var(--font-subtitle);
   font-weight: bold;
   display: flex;
   justify-content: center;
@@ -131,7 +142,7 @@ body {
 
 /* note heading */
 #note-section-heading {
-  font-size: 1.1rem;
+  font-size: var(--font-heading);
   color: var(--white-text);
   margin: 1rem 0;
 }
@@ -188,3 +199,25 @@ body {
 }
 
 /* Note - section */
+
+@media (max-width: 680px) {
+  #container {
+    width: 90%;
+    margin: 0.5rem 0;
+    max-width: unset;
+  }
+
+  #container .note-taking-section .note-item .add-note-btn{
+    width: 100%
+  }
+
+  #container #added-note-section-container .note-card .other-components {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  #container #added-note-section-container .note-card .other-components span {
+    align-self: flex-end;
+  }
+}
