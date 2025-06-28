@@ -39,7 +39,7 @@ body {
 #container {
   margin: 2rem;
   max-width: 680px;
-  width: 80%
+  width: 100%;
 }
 
 /* header section */
