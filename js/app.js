@@ -1,5 +1,6 @@
 // Note keeper
 const addedNoteSectionContainer = document.querySelector('#added-note-section-container')
+checkingNoteCount()
 
 // checking the localStorage is empty or not
 if (localStorage.length > 0) {
@@ -20,6 +21,7 @@ noteAddBtn.addEventListener('click', () => {
 
   if (!userNoteTitle == '' && !userNoteContent == '') {
     localStorage.setItem(userNoteTitle, userNoteContent)
+    checkingNoteCount()
     noteTitle.value = ''
     noteContent.value = ''
     noteTitle.focus()
@@ -77,6 +79,7 @@ function gettingNotes() {
       otherComponents.append(cardContent, deletbtn)
 
       noteCard.append(headComponents, otherComponents)
+      checkingNoteCount()
       addedNoteSectionContainer.appendChild(noteCard)
     }
   }
@@ -90,13 +93,27 @@ function removeNoteCards(e) {
   let headComponents = card.firstElementChild
   let noteElement = headComponents.children
   let noteContent = noteElement[1]
-
+  
   if (addedNoteSectionContainer.contains(card)) {
     localStorage.removeItem(noteContent.textContent)
     addedNoteSectionContainer.removeChild(card)
+    checkingNoteCount()
     console.log(localStorage.length)
-    if (localStorage.length === 0) {
+    if (addedNoteSectionContainer.childElementCount == 0 ) {
       addedNoteSectionContainer.style.display = 'none'
+      checkingNoteCount()
     }
+  }
+}
+
+
+function checkingNoteCount() {
+  let noteSectionHeading = document.querySelector('#note-section-heading')
+  if (localStorage.length >= 1) {
+    console.log('My Notes')
+    noteSectionHeading.textContent = 'My Notes'
+  } else {
+    noteSectionHeading.textContent = 'You have any notes yet'
+    console.log('You have any notes yet')
   }
 }
