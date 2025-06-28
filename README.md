@@ -44,6 +44,8 @@ mark-down-note-taking-app/
 ├── app.js            # JavaScript logic
 └── README.md         # This file
 
+```
+
 ### 🛠️ Technologies Used
 
 - **🧩 HTML5**
