@@ -31,12 +31,11 @@ A clean, minimalist note-taking app built using **HTML, CSS, and JavaScript**, w
 
 ![App Screenshot](./images/note-taking-app-scren-shot.png)
 
-> _You can add a real screenshot in `/assets/screenshot.png` to show the UI._
 
 ---
 
 ### 📁 Project Structure
-
+mark-down-note-taking-app/
 │
 ├── index.html # Main HTML structure
 ├── styles.css # Dark-themed styles
