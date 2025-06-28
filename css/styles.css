@@ -200,10 +200,10 @@ body {
 
 /* Note - section */
 
-@media (max-width: 680px) {
+@media (max-width: 600px) {
   #container {
     width: 100%;
-    margin: 0.5rem 0;
+    margin: 0.5rem 0.2rem;
   }
 
   #container .note-taking-section .note-item .add-note-btn{
