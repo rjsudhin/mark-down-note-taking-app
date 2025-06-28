@@ -35,12 +35,14 @@ A clean, minimalist note-taking app built using **HTML, CSS, and JavaScript**, w
 ---
 
 ### 📁 Project Structure
+
+```bash
 mark-down-note-taking-app/
 │
-├── index.html # Main HTML structure
-├── styles.css # Dark-themed styles
-├── app.js # JavaScript logic
-└── README.md # This file
+├── index.html        # Main HTML structure
+├── styles.css        # Dark-themed styles
+├── app.js            # JavaScript logic
+└── README.md         # This file
 
 ### 🛠️ Technologies Used
 
